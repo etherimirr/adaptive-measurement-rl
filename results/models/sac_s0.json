@@ -1,0 +1,29 @@
+{
+  "algo": "sac",
+  "seed": 0,
+  "timesteps": 150000,
+  "train_seconds": 1490.9,
+  "config": {
+    "algo": "sac",
+    "total_timesteps": 150000,
+    "n_envs": 1,
+    "gamma": 0.99,
+    "hyperparams": {
+      "learning_rate": 0.0003,
+      "buffer_size": 100000,
+      "learning_starts": 2000,
+      "batch_size": 256,
+      "tau": 0.005,
+      "train_freq": 1,
+      "gradient_steps": 1,
+      "ent_coef": "auto",
+      "policy_kwargs": {
+        "net_arch": [
+          128,
+          128
+        ],
+        "use_sde": false
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# PPO with categorical action heads: frequency bin, dwell level, stop/continue.
+# Same hyperparameters as configs/ppo.yaml; only the action space changes.
+name: probe_ent0.01
+algo: ppo
+total_timesteps: 1000000
+n_envs: 8
+gamma: 0.99
+env_kwargs:
+  action_mode: discrete
+hyperparams:
+  n_steps: 256
+  batch_size: 256
+  n_epochs: 10
+  learning_rate: 0.0003
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01
+  policy_kwargs:
+    net_arch: [128, 128]

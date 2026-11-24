@@ -1,0 +1,525 @@
+{
+  "n_devices": 500,
+  "eval_seed0": 100000,
+  "methods": {
+    "ppo_discrete_s0": {
+      "success_rate": 0.832,
+      "time_median_ms": 25.92476650083833,
+      "time_mean_ms": 30.44568120450631,
+      "time_p90_ms": 56.79598173579245,
+      "measurements_mean": 5.508,
+      "f0_err_median_mhz": 0.3198243925639499,
+      "q_rel_err_median": 0.03376928533045868,
+      "forced_stop_rate": 0.088
+    },
+    "ppo_discrete_s1": {
+      "success_rate": 0.474,
+      "time_median_ms": 61.866346549804334,
+      "time_mean_ms": 51.59567275175685,
+      "time_p90_ms": 64.35350069338523,
+      "measurements_mean": 10.238,
+      "f0_err_median_mhz": 0.9610575294194401,
+      "q_rel_err_median": 0.0706331394282292,
+      "forced_stop_rate": 0.614
+    },
+    "ppo_discrete_s2": {
+      "success_rate": 0.782,
+      "time_median_ms": 31.283177667225555,
+      "time_mean_ms": 39.088321279257855,
+      "time_p90_ms": 68.14158883361279,
+      "measurements_mean": 5.542,
+      "f0_err_median_mhz": 0.379678389581084,
+      "q_rel_err_median": 0.03789029589095856,
+      "forced_stop_rate": 0.264
+    },
+    "ppo_discrete_s3": {
+      "success_rate": 0.744,
+      "time_median_ms": 40.29800736949894,
+      "time_mean_ms": 42.658424392095434,
+      "time_p90_ms": 65.220790024483,
+      "measurements_mean": 7.13,
+      "f0_err_median_mhz": 0.2833919355686998,
+      "q_rel_err_median": 0.037729966697615316,
+      "forced_stop_rate": 0.41
+    },
+    "ppo_discrete_s4": {
+      "success_rate": 0.72,
+      "time_median_ms": 31.283177667225555,
+      "time_mean_ms": 38.009428967822764,
+      "time_p90_ms": 61.699066003353344,
+      "measurements_mean": 6.538,
+      "f0_err_median_mhz": 0.4059813901988729,
+      "q_rel_err_median": 0.038172061568173224,
+      "forced_stop_rate": 0.294
+    },
+    "ppo_dwellstop_s0": {
+      "success_rate": 0.942,
+      "time_median_ms": 19.001983845854276,
+      "time_mean_ms": 19.327723365806264,
+      "time_p90_ms": 23.428129210463865,
+      "measurements_mean": 7.014,
+      "f0_err_median_mhz": 0.18651550993520338,
+      "q_rel_err_median": 0.02579662510491105,
+      "forced_stop_rate": 0.0
+    },
+    "ppo_dwellstop_s1": {
+      "success_rate": 0.958,
+      "time_median_ms": 19.92476650083833,
+      "time_mean_ms": 20.419044517324313,
+      "time_p90_ms": 27.93761235725744,
+      "measurements_mean": 5.798,
+      "f0_err_median_mhz": 0.18625667619165398,
+      "q_rel_err_median": 0.025117140285190312,
+      "forced_stop_rate": 0.0
+    },
+    "ppo_dwellstop_s2": {
+      "success_rate": 0.958,
+      "time_median_ms": 19.043360074231494,
+      "time_mean_ms": 20.432900482338074,
+      "time_p90_ms": 28.536634654980432,
+      "measurements_mean": 5.268,
+      "f0_err_median_mhz": 0.23309324182818614,
+      "q_rel_err_median": 0.027662252813459073,
+      "forced_stop_rate": 0.0
+    },
+    "ppo_dwellstop_s3": {
+      "success_rate": 0.964,
+      "time_median_ms": 21.959719801006,
+      "time_mean_ms": 22.374039414935577,
+      "time_p90_ms": 34.06635533445111,
+      "measurements_mean": 5.6,
+      "f0_err_median_mhz": 0.20668467277329405,
+      "q_rel_err_median": 0.023393854990382455,
+      "forced_stop_rate": 0.0
+    },
+    "ppo_dwellstop_s4": {
+      "success_rate": 0.976,
+      "time_median_ms": 23.783177667225555,
+      "time_mean_ms": 24.49660197192464,
+      "time_p90_ms": 34.5,
+      "measurements_mean": 5.206,
+      "f0_err_median_mhz": 0.20976263393657213,
+      "q_rel_err_median": 0.023439323864676738,
+      "forced_stop_rate": 0.0
+    },
+    "ppo_s0": {
+      "success_rate": 0.98,
+      "time_median_ms": 31.44480779345315,
+      "time_mean_ms": 33.37770933993702,
+      "time_p90_ms": 51.00892142130744,
+      "measurements_mean": 5.258,
+      "f0_err_median_mhz": 0.2028297761609288,
+      "q_rel_err_median": 0.022033956487220133,
+      "forced_stop_rate": 0.062
+    },
+    "ppo_s1": {
+      "success_rate": 0.952,
+      "time_median_ms": 35.736686590907496,
+      "time_mean_ms": 38.939659938419375,
+      "time_p90_ms": 63.87628430176597,
+      "measurements_mean": 5.266,
+      "f0_err_median_mhz": 0.19455438013049609,
+      "q_rel_err_median": 0.024706877466824054,
+      "forced_stop_rate": 0.106
+    },
+    "ppo_s2": {
+      "success_rate": 0.958,
+      "time_median_ms": 31.681312617544396,
+      "time_mean_ms": 36.86270411630691,
+      "time_p90_ms": 64.0529024430445,
+      "measurements_mean": 5.79,
+      "f0_err_median_mhz": 0.21515246932257703,
+      "q_rel_err_median": 0.023778605539545125,
+      "forced_stop_rate": 0.182
+    },
+    "ppo_s3": {
+      "success_rate": 0.918,
+      "time_median_ms": 30.035997363084256,
+      "time_mean_ms": 33.609178367811346,
+      "time_p90_ms": 60.41673907259066,
+      "measurements_mean": 6.758,
+      "f0_err_median_mhz": 0.23206988358226432,
+      "q_rel_err_median": 0.03253163897442253,
+      "forced_stop_rate": 0.116
+    },
+    "ppo_s4": {
+      "success_rate": 0.94,
+      "time_median_ms": 43.875438222136616,
+      "time_mean_ms": 44.54037404035051,
+      "time_p90_ms": 66.19205222040921,
+      "measurements_mean": 7.664,
+      "f0_err_median_mhz": 0.20348198792308203,
+      "q_rel_err_median": 0.03030917465740076,
+      "forced_stop_rate": 0.344
+    },
+    "sac_s0": {
+      "success_rate": 0.93,
+      "time_median_ms": 29.438550375737897,
+      "time_mean_ms": 32.75614128123405,
+      "time_p90_ms": 54.13729625104927,
+      "measurements_mean": 7.392,
+      "f0_err_median_mhz": 0.23097447968489782,
+      "q_rel_err_median": 0.02910360513366927,
+      "forced_stop_rate": 0.082
+    },
+    "sac_s1": {
+      "success_rate": 0.93,
+      "time_median_ms": 28.601853128535165,
+      "time_mean_ms": 30.488176553612533,
+      "time_p90_ms": 47.749586544815806,
+      "measurements_mean": 7.274,
+      "f0_err_median_mhz": 0.2335525934002991,
+      "q_rel_err_median": 0.02641651787304493,
+      "forced_stop_rate": 0.026
+    },
+    "sac_s2": {
+      "success_rate": 0.932,
+      "time_median_ms": 30.6962397341429,
+      "time_mean_ms": 33.589458796824594,
+      "time_p90_ms": 56.37073351567942,
+      "measurements_mean": 10.46,
+      "f0_err_median_mhz": 0.21355775358378182,
+      "q_rel_err_median": 0.028275782413892545,
+      "forced_stop_rate": 0.078
+    },
+    "sac_s3": {
+      "success_rate": 0.908,
+      "time_median_ms": 29.471230532510795,
+      "time_mean_ms": 32.271877653537565,
+      "time_p90_ms": 44.62576469651144,
+      "measurements_mean": 7.126,
+      "f0_err_median_mhz": 0.26352684274355553,
+      "q_rel_err_median": 0.031255768645811983,
+      "forced_stop_rate": 0.052
+    },
+    "sac_s4": {
+      "success_rate": 0.932,
+      "time_median_ms": 25.593812653540553,
+      "time_mean_ms": 28.8148628810473,
+      "time_p90_ms": 45.35742509214768,
+      "measurements_mean": 7.11,
+      "f0_err_median_mhz": 0.22204192836117187,
+      "q_rel_err_median": 0.0257710431667261,
+      "forced_stop_rate": 0.018
+    },
+    "sweep(n=20,dwell=0.5)": {
+      "success_rate": 0.528,
+      "time_median_ms": 20.0,
+      "time_mean_ms": 20.0,
+      "time_p90_ms": 20.0,
+      "measurements_mean": 20.0,
+      "f0_err_median_mhz": 0.6660651619549984,
+      "q_rel_err_median": 0.04975668237409946,
+      "forced_stop_rate": 0.0
+    },
+    "sweep(n=20,dwell=1)": {
+      "success_rate": 0.73,
+      "time_median_ms": 30.0,
+      "time_mean_ms": 30.0,
+      "time_p90_ms": 30.0,
+      "measurements_mean": 20.0,
+      "f0_err_median_mhz": 0.46341726578957854,
+      "q_rel_err_median": 0.035864387589140685,
+      "forced_stop_rate": 0.0
+    },
+    "sweep(n=30,dwell=0.5)": {
+      "success_rate": 0.67,
+      "time_median_ms": 30.0,
+      "time_mean_ms": 30.0,
+      "time_p90_ms": 30.0,
+      "measurements_mean": 30.0,
+      "f0_err_median_mhz": 0.4944728158802203,
+      "q_rel_err_median": 0.04061426623977739,
+      "forced_stop_rate": 0.0
+    },
+    "sweep(n=30,dwell=1)": {
+      "success_rate": 0.846,
+      "time_median_ms": 45.0,
+      "time_mean_ms": 45.0,
+      "time_p90_ms": 45.0,
+      "measurements_mean": 30.0,
+      "f0_err_median_mhz": 0.35126945033225887,
+      "q_rel_err_median": 0.03001775132891181,
+      "forced_stop_rate": 0.0
+    },
+    "sweep(n=40,dwell=0.5)": {
+      "success_rate": 0.72,
+      "time_median_ms": 40.0,
+      "time_mean_ms": 40.0,
+      "time_p90_ms": 40.0,
+      "measurements_mean": 40.0,
+      "f0_err_median_mhz": 0.4910640818664991,
+      "q_rel_err_median": 0.03588058051517992,
+      "forced_stop_rate": 1.0
+    },
+    "sweep(n=40,dwell=1)": {
+      "success_rate": 0.896,
+      "time_median_ms": 60.0,
+      "time_mean_ms": 60.0,
+      "time_p90_ms": 60.0,
+      "measurements_mean": 40.0,
+      "f0_err_median_mhz": 0.34720890372530455,
+      "q_rel_err_median": 0.025231748899660362,
+      "forced_stop_rate": 1.0
+    },
+    "random(n=30,dwell=1)": {
+      "success_rate": 0.792,
+      "time_median_ms": 45.0,
+      "time_mean_ms": 45.0,
+      "time_p90_ms": 45.0,
+      "measurements_mean": 30.0,
+      "f0_err_median_mhz": 0.3919073037252918,
+      "q_rel_err_median": 0.035125796460111824,
+      "forced_stop_rate": 0.0
+    },
+    "infogain(dwell=1,f0_sd<0.7MHz,logQ_sd<0.08)": {
+      "success_rate": 0.792,
+      "time_median_ms": 9.0,
+      "time_mean_ms": 12.633,
+      "time_p90_ms": 24.0,
+      "measurements_mean": 8.422,
+      "f0_err_median_mhz": 0.3069508468731552,
+      "q_rel_err_median": 0.038097537381995034,
+      "forced_stop_rate": 0.0
+    },
+    "infogain(dwell=1,f0_sd<0.5MHz,logQ_sd<0.06)": {
+      "success_rate": 0.918,
+      "time_median_ms": 13.5,
+      "time_mean_ms": 20.736,
+      "time_p90_ms": 43.650000000000034,
+      "measurements_mean": 13.824,
+      "f0_err_median_mhz": 0.24884035052608056,
+      "q_rel_err_median": 0.031257909920427526,
+      "forced_stop_rate": 0.034
+    },
+    "infogain(dwell=1,f0_sd<0.4MHz,logQ_sd<0.05)": {
+      "success_rate": 0.962,
+      "time_median_ms": 18.0,
+      "time_mean_ms": 27.276,
+      "time_p90_ms": 60.0,
+      "measurements_mean": 18.184,
+      "f0_err_median_mhz": 0.2135479647100702,
+      "q_rel_err_median": 0.02418542147423863,
+      "forced_stop_rate": 0.132
+    },
+    "infogain(dwell=1,f0_sd<0.3MHz,logQ_sd<0.04)": {
+      "success_rate": 0.984,
+      "time_median_ms": 25.5,
+      "time_mean_ms": 35.805,
+      "time_p90_ms": 60.0,
+      "measurements_mean": 23.87,
+      "f0_err_median_mhz": 0.17278622011351885,
+      "q_rel_err_median": 0.02122101634025243,
+      "forced_stop_rate": 0.266
+    },
+    "infogain(dwell=1,f0_sd<0.2MHz,logQ_sd<0.03)": {
+      "success_rate": 0.994,
+      "time_median_ms": 46.5,
+      "time_mean_ms": 48.051,
+      "time_p90_ms": 60.0,
+      "measurements_mean": 32.034,
+      "f0_err_median_mhz": 0.1639800737200936,
+      "q_rel_err_median": 0.017268754575300832,
+      "forced_stop_rate": 0.426
+    },
+    "infogain(dwell=3,f0_sd<0.7MHz,logQ_sd<0.08)": {
+      "success_rate": 0.876,
+      "time_median_ms": 13.999999999999998,
+      "time_mean_ms": 16.386999999999997,
+      "time_p90_ms": 24.499999999999996,
+      "measurements_mean": 4.682,
+      "f0_err_median_mhz": 0.2958487704811663,
+      "q_rel_err_median": 0.03484949425758112,
+      "forced_stop_rate": 0.0
+    },
+    "infogain(dwell=3,f0_sd<0.5MHz,logQ_sd<0.06)": {
+      "success_rate": 0.938,
+      "time_median_ms": 17.499999999999996,
+      "time_mean_ms": 21.867999999999995,
+      "time_p90_ms": 38.49999999999999,
+      "measurements_mean": 6.248,
+      "f0_err_median_mhz": 0.25040255759267716,
+      "q_rel_err_median": 0.028040163495477794,
+      "forced_stop_rate": 0.0
+    },
+    "infogain(dwell=3,f0_sd<0.4MHz,logQ_sd<0.05)": {
+      "success_rate": 0.968,
+      "time_median_ms": 20.999999999999996,
+      "time_mean_ms": 27.87399999999999,
+      "time_p90_ms": 55.99999999999999,
+      "measurements_mean": 7.964,
+      "f0_err_median_mhz": 0.20256928436857002,
+      "q_rel_err_median": 0.02276117674049139,
+      "forced_stop_rate": 0.09
+    },
+    "infogain(dwell=3,f0_sd<0.3MHz,logQ_sd<0.04)": {
+      "success_rate": 0.984,
+      "time_median_ms": 27.999999999999996,
+      "time_mean_ms": 36.147999999999996,
+      "time_p90_ms": 62.99999999999999,
+      "measurements_mean": 10.328,
+      "f0_err_median_mhz": 0.15872704517749803,
+      "q_rel_err_median": 0.018732202559283345,
+      "forced_stop_rate": 0.226
+    },
+    "infogain(dwell=3,f0_sd<0.2MHz,logQ_sd<0.03)": {
+      "success_rate": 0.994,
+      "time_median_ms": 45.49999999999999,
+      "time_mean_ms": 48.22299999999999,
+      "time_p90_ms": 62.99999999999999,
+      "measurements_mean": 13.778,
+      "f0_err_median_mhz": 0.15133784500198644,
+      "q_rel_err_median": 0.015466539607009944,
+      "forced_stop_rate": 0.388
+    },
+    "infogain(dwell=0.3,f0_sd<0.3MHz,logQ_sd<0.04)": {
+      "success_rate": 0.944,
+      "time_median_ms": 32.000000000000014,
+      "time_mean_ms": 31.571200000000005,
+      "time_p90_ms": 32.000000000000014,
+      "measurements_mean": 39.464,
+      "f0_err_median_mhz": 0.21889358759130673,
+      "q_rel_err_median": 0.027283489024608268,
+      "forced_stop_rate": 0.962
+    }
+  },
+  "aggregate": {
+    "ppo": {
+      "success_rate": {
+        "mean": 0.9495999999999999,
+        "std": 0.02045091684986273
+      },
+      "time_median_ms": {
+        "mean": 34.554848517425185,
+        "std": 5.032289961901274
+      },
+      "time_mean_ms": {
+        "mean": 37.465925160565035,
+        "std": 4.102964810861536
+      },
+      "time_p90_ms": {
+        "mean": 61.10937989182355,
+        "std": 5.378710916979341
+      },
+      "measurements_mean": {
+        "mean": 6.1472,
+        "std": 0.9347235741116193
+      },
+      "f0_err_median_mhz": {
+        "mean": 0.20961769942386965,
+        "std": 0.013002774298531045
+      },
+      "q_rel_err_median": {
+        "mean": 0.026672050625082523,
+        "std": 0.0040325995111546
+      },
+      "forced_stop_rate": {
+        "mean": 0.16199999999999998,
+        "std": 0.09876841600430776
+      }
+    },
+    "sac": {
+      "success_rate": {
+        "mean": 0.9264000000000001,
+        "std": 0.009243376006633082
+      },
+      "time_median_ms": {
+        "mean": 28.760337284893456,
+        "std": 1.7184327724931185
+      },
+      "time_mean_ms": {
+        "mean": 31.584103433251208,
+        "std": 1.716852072305152
+      },
+      "time_p90_ms": {
+        "mean": 49.64816122004073,
+        "std": 4.745203488848251
+      },
+      "measurements_mean": {
+        "mean": 7.872400000000001,
+        "std": 1.297914265273327
+      },
+      "f0_err_median_mhz": {
+        "mean": 0.23273071955474123,
+        "std": 0.0169352528169045
+      },
+      "q_rel_err_median": {
+        "mean": 0.028164543446628963,
+        "std": 0.0019613424580000225
+      },
+      "forced_stop_rate": {
+        "mean": 0.0512,
+        "std": 0.02609521028848015
+      }
+    },
+    "ppo_discrete": {
+      "success_rate": {
+        "mean": 0.7103999999999999,
+        "std": 0.12411220729646219
+      },
+      "time_median_ms": {
+        "mean": 38.13109515091854,
+        "std": 12.734520598530972
+      },
+      "time_mean_ms": {
+        "mean": 40.35950571908784,
+        "std": 6.8841726267426075
+      },
+      "time_p90_ms": {
+        "mean": 63.242185458125356,
+        "std": 3.8233182211106644
+      },
+      "measurements_mean": {
+        "mean": 6.991199999999999,
+        "std": 1.7358818392966728
+      },
+      "f0_err_median_mhz": {
+        "mean": 0.46998672746640935,
+        "std": 0.2493067005950068
+      },
+      "q_rel_err_median": {
+        "mean": 0.04363894978308699,
+        "std": 0.01359372296639603
+      },
+      "forced_stop_rate": {
+        "mean": 0.33399999999999996,
+        "std": 0.173891920456357
+      }
+    },
+    "ppo_dwellstop": {
+      "success_rate": {
+        "mean": 0.9596,
+        "std": 0.010983624174196793
+      },
+      "time_median_ms": {
+        "mean": 20.74260157783113,
+        "std": 1.8607797136775253
+      },
+      "time_mean_ms": {
+        "mean": 21.410061950465774,
+        "std": 1.8291569601769266
+      },
+      "time_p90_ms": {
+        "mean": 29.693746311430566,
+        "std": 4.1448921745567
+      },
+      "measurements_mean": {
+        "mean": 5.7772,
+        "std": 0.6552954753391786
+      },
+      "f0_err_median_mhz": {
+        "mean": 0.20446254693298194,
+        "std": 0.01735681607972876
+      },
+      "q_rel_err_median": {
+        "mean": 0.02508183941172392,
+        "std": 0.001594857159227124
+      },
+      "forced_stop_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "best_rl": "ppo_dwellstop_s4"
+}

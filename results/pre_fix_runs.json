@@ -1,0 +1,28 @@
+{
+  "note": "Runs trained BEFORE the terminated/truncated fix. Budget exhaustion was flagged `truncated`, so Stable-Baselines3 bootstrapped gamma * V(s_final) on top of the terminal reward. Every agent converged to the same policy: maximum dwell, 6 measurements, ride the 60 ms budget (63 ms), never stop on its own. Kept as evidence of the bug; every model in results/models was retrained after the fix.",
+  "eval_500_held_out_devices_deterministic": {
+    "ppo_continuous_5_seeds": {"success_rate_mean": 0.974, "success_rate_std": 0.009, "time_median_ms": 63.0, "measurements_mean": 6.0},
+    "sac_continuous_5_seeds": {"success_rate_mean": 0.564, "success_rate_std": 0.168, "time_median_ms": 62.9, "measurements_mean": 6.4}
+  },
+  "training_time_stats_last_episodes": {
+    "ppo_categorical_5_seeds_1M_steps": {"success_rate": "0.95-0.98", "time_mean_ms": 63.0, "measurements_mean": 6.0},
+    "ppo_dwell_stop_5_seeds_120k_steps": {"success_rate": "0.992-1.000", "time_mean_ms": "63.0-63.2", "measurements_mean": "6.0-6.1"},
+    "probe_categorical_ent0.01_300k": {"success_rate": 0.929, "time_mean_ms": 63.0, "measurements_mean": 6.01},
+    "probe_categorical_ent0.03_300k": {"success_rate": 0.909, "time_mean_ms": 63.0, "measurements_mean": 6.02},
+    "probe_marginal_obs_ent0.0_400k": {"success_rate": 0.959, "time_mean_ms": 63.0, "measurements_mean": 6.0},
+    "probe_marginal_obs_ent0.01_400k": {"success_rate": 0.96, "time_mean_ms": 63.0, "measurements_mean": 6.0}
+  },
+  "diagnostic_returns_150_devices": {
+    "ppo_categorical_s0_learned": {"return": 5.45, "success_rate": 0.833, "time_mean_ms": 63.0},
+    "infogain_dwell1_bayes_stop": {"return": 10.11, "success_rate": 0.993, "time_mean_ms": 35.8},
+    "infogain_dwell3_bayes_stop": {"return": 9.90, "success_rate": 0.987, "time_mean_ms": 35.7},
+    "infogain_dwell10_bayes_stop": {"return": 9.47, "success_rate": 1.0, "time_mean_ms": 48.9}
+  },
+  "hypotheses_tried_before_finding_the_bug": [
+    "Gaussian action means saturating past the [-1, 1] bound: real (dwell mean ~3, stop mean ~-2.5), fixed with categorical heads, outcome unchanged",
+    "stop probability collapsing early with no entropy bonus: ent_coef 0.01 and 0.03, outcome unchanged",
+    "belief summary not sufficient for search: added 40-bin f0 and 8-bin log Q marginals, outcome unchanged",
+    "placement too hard to learn end to end: handed placement to expected information gain, still never stopped",
+    "comparing returns showed hand-written stopping policies earned ~10 vs ~5.5 for the learned one, so the learner was seeing a different reward than the environment paid: traced to SB3 timeout bootstrapping"
+  ]
+}

@@ -1,0 +1,16 @@
+# PPO on AdaptiveMeasure-v0. Episodes are at most 40 steps, so a rollout of
+# 2048 steps covers roughly 50-100 episodes per update.
+algo: ppo
+total_timesteps: 1000000
+n_envs: 8
+gamma: 0.99
+hyperparams:
+  n_steps: 256          # per env, so 2048 transitions per update
+  batch_size: 256
+  n_epochs: 10
+  learning_rate: 0.0003
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.0
+  policy_kwargs:
+    net_arch: [128, 128]

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+results/logs/
+results/train_*.log
+.DS_Store
+results/trainlogs/
+results/eval_stdout.txt
